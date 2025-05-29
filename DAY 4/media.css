@@ -7,3 +7,38 @@
     }
     
   }
+  body{
+    background-color: black;
+    color: antiquewhite;
+
+  }
+  h1{
+    text-align: left;
+    text-indent: 0%;
+    animation-fill-mode: initial;
+  }
+  @keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+hr{
+    height: 2px;
+    background: brown;
+    border-color: brown;
+}
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+address{
+    font-style: normal;
+
+}
