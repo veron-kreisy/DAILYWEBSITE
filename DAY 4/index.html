@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 4 OF BUILDING A WEBSITE EVERYDAY FOR 30 DAYS</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="media.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> VERONICA MUASYA</div>
+        <div>
+            <ul class="nav-Links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+ <nav id="hamburger-nav">
+    <div class="logo"> VERONICA MUASYA</div>
+<div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="Togglemenu()">
+    <span></span>
+    <span></span>
+    <span> </span>
+</div>
+<div class="menu-links">
+              <li><a href="#about" onclick="Togglemenu()">About</a></li>
+              <li><a href="#experience" onclick="Togglemenu()">Experience</a></li>
+              <li><a href="#projects" onclick="Togglemenu()">Projects</a></li>
+              <li><a href="#contact" onclick="Togglemenu()" >Contact</a></li>
+</div>
+</div>
+ </nav>
+ <section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/IMG-20230513-WA0000.jpg" alt="VERONICA">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">VERONICA</h1>
+        <P class="section__text__p2">A SOFTWARE DEVELOPER/ CREATIVE/ VISUAL ARTIST</P></div>
+        <div class="btn-container">
+          <button 
+          class="btn btn-color-2"
+          onclick="window.open('./assets/resume-example.pdf')">
+           DOWNLOAD CV
+        </button> 
+            <button class=" btn btn-color-1" onclick= "location.href='./#Contact'">Contact Info</button> 
+          </div>
+          <div id="socials-container">
+            <img src="./assets/linkedin.png"
+            alt="my LinkedIn profile"
+             class="icon" 
+             onclick="location.href='https:linkedin.com/in/veronica-muasya-9a310217a'"/>
+             <img src="./assets/github.png"
+            alt="my github profile"
+             class="icon" 
+             onclick="location.href='https:github.com/veron-kreisy'"/>
+          </div>
+ </section>
+ <section id="about">
+    <p class="section__text__p1">GET TO KNOW MORE</p>
+    <h1 class="title">ABOUT ME </h1>
+  <div class="section-container">
+    <div class="section__plc-container">
+        <img src="./assets/20220516_171324.jpg"
+         alt="my profile picture"
+         class="about pic">
+
+    </div>
+    <div class="about-details-container">
+        <div class="about-container">
+            <div class="details-container">
+                <img src="./assets/experience.png"
+                 alt="Experience icon"
+                 class="icon">
+                 <h3>Experience</h3>
+                 <p>2+ years <br /> Frontend Development</p>
+            </div>
+            <div class="details-container">
+                <img src="./assets/education.png" 
+                alt="Education icon"
+                class="icon">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- another div that will be deleted   line 95 to line 111--> 
+    <div class="about-details-container">
+        <div class="about-container">
+            <div class="details-container">
+                <img src="./assets/experience.png"
+                 alt="Experience icon"
+                 class="icon">
+                 <h3>Experience</h3>
+                 <p>2+ years <br /> Frontend Development</p>
+            </div>
+            <div class="details-container">
+                <img src="./assets/education.png" 
+                alt="Education icon"
+                class="icon">
+            </div>
+        </div>
+
+    </div>
+  
+
+    
+ </section>
+
+
+ <script src="script.js"></script>
+</body>
+</html>
