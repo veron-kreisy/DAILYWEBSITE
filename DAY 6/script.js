@@ -1,25 +1,30 @@
 // mask sensitive information using asterisks or other characters
 
 
-// function maskEmail(email){
 
+// let email = "veronica@example.com";
+
+// function maskEmail(email) {
+//   const [username, domain] = email.split("@");
+
+//   if (username.length <= 2) {
+//     return "*@" + domain;
+//   }
+
+//   const firstChar = username[0];
+//   const lastChar = username[username.length - 1];
+//   const maskedPart = "*".repeat(username.length - 2);
+
+//   return `${firstChar}${maskedPart}${lastChar}@${domain}`;
 // }
-// let email = "Email addresss";
+// console.log(maskEmail(email));
 
-// console.log(maskEmail());
-let email = "veronica@example.com";
 
-function maskEmail(email) {
-  const [username, domain] = email.split("@");
+const togglePassword = document.getElementById("togglePassword");
+const passwordInput = document.getElementById("password");
 
-  if (username.length <= 2) {
-    return "*@" + domain;
-  }
-
-  const firstChar = username[0];
-  const lastChar = username[username.length - 1];
-  const maskedPart = "*".repeat(username.length - 2);
-
-  return `${firstChar}${maskedPart}${lastChar}@${domain}`;
-}
-console.log(maskEmail(email));
+togglePassword.addEventListener("click", () => {
+  const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+  passwordInput.setAttribute("type", type);
+  togglePassword.textContent = type === "password" ? "Show" : "Hide";
+});
