@@ -52,3 +52,21 @@ button:hover {
   color: #777;
   margin-top: 10px;
 }
+
+.password-field {
+  position: relative;
+  display: flex;
+}
+
+.password-field input {
+  flex: 1;
+}
+
+.password-field button {
+  margin-left: 10px;
+  background: #ddd;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
